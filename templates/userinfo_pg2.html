@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Graph Generation</title>
+        <h1>Generated graph for {{stock_symbol}}</h1>
+        <h6>Last 30 days of Closing Price valuations:</h6>
+        <p><a href={{ url_for('index') }} >Back</a></p>
+        
+        {{ js_resources | safe }}
+        {{ css_resources | safe }}
+        {{ script | safe }}
+     </head>
+     <body>
+        {{ div | safe }}
+     </body>
+
+</html>
